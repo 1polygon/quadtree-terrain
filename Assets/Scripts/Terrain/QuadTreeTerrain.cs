@@ -45,6 +45,7 @@ public class QuadTreeTerrain : MonoBehaviour
 
         Material.SetTexture("_Heightmap", heightmap);
         Material.SetFloat("_Size", Size);
+        Material.SetFloat("_Height", NoiseHeight);
 
         // Generate grid meshes for all possible lod neighbors
         for (byte i = 0; i < 16; i++)
